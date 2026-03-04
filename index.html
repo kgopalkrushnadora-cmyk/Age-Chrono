@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Chrono - Premium Age Calculator</title>
+    <meta name="description" content="A premium and beautiful age calculator web application.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-hourglass-half"></i> Age Chrono</h1>
+            <p>Calculate your exact age and life milestones</p>
+        </header>
+
+        <!-- Top Advertisement Space -->
+        <div class="ad-container top-ad">
+            <div class="ad-placeholder">Advertisement Space</div>
+        </div>
+
+        <main>
+            <section class="input-section glass-panel">
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <button id="calculate-btn" class="primary-btn">Calculate Age <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </section>
+
+            <section class="results-section hidden" id="results">
+                <div class="main-age glass-panel">
+                    <h2>You are currently</h2>
+                    <div class="age-display" id="main-age-display">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+
+                <div class="grid-results">
+                    <div class="result-card glass-panel">
+                        <i class="fa-solid fa-cake-candles icon"></i>
+                        <h3>Next Birthday</h3>
+                        <p id="next-birthday">--</p>
+                        <span class="sub-text" id="next-birthday-countdown">--</span>
+                    </div>
+
+                    <div class="result-card glass-panel">
+                        <i class="fa-solid fa-star icon"></i>
+                        <h3>Zodiac Sign</h3>
+                        <p id="zodiac-sign">--</p>
+                    </div>
+
+                    <div class="result-card glass-panel">
+                        <i class="fa-solid fa-calendar-days icon"></i>
+                        <h3>Total Days</h3>
+                        <p id="total-days">--</p>
+                    </div>
+
+                    <div class="result-card glass-panel">
+                        <i class="fa-solid fa-clock icon"></i>
+                        <h3>Total Hours</h3>
+                        <p id="total-hours">--</p>
+                    </div>
+                </div>
+
+                <div class="extra-stats glass-panel">
+                    <h3>Fun Facts</h3>
+                    <ul id="fun-facts">
+                        <!-- Filled by JS -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Bottom Advertisement Space -->
+            <div class="ad-container bottom-ad">
+                <div class="ad-placeholder">Advertisement Space</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
